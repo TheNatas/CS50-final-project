@@ -1,0 +1,6 @@
+sqlite3
+Flask
+Blob.js (https://github.com/eligrey/Blob.js/)
+canvas-toBlob (https://github.com/eligrey/canvas-toBlob.js/)
+FileSaver.js (https://github.com/eligrey/FileSaver.js)
+
