@@ -1,0 +1,194 @@
+#game{
+    border: solid 0.5rem rgb(10, 10, 10);
+    background-color: black;
+    color: white;
+    box-shadow: 0.7rem 0.4rem 0.8rem 0.5rem rgba(19, 19, 19, 0.735);
+    height: 55rem;
+    width: 30rem;
+    border-radius: 2rem;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2rem 0;
+
+    cursor: pointer;
+    user-select: none;
+
+    overflow: hidden;
+}
+
+#camera-div{
+  position: absolute;
+  display: flex;
+  align-self: start;
+  left: 14rem;
+  width: 1.2rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 0 0 2rem 2rem;
+  top: -0.1rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#camera{
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(100, 100, 100);
+  border-radius: 10rem;
+}
+
+#camera.active{
+  background-color: white;
+}
+
+#status-bar{
+  display: grid;
+  align-self: flex-start;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6)
+}
+
+#clock-div{
+  justify-self: end;
+}
+
+#clock{
+  margin-bottom: 0;
+  position: relative;
+  right: 1.5rem;
+}
+
+#hidden{
+  position: absolute;
+  background-color: transparent;
+  height: 1rem;
+  width: 100%;
+  top: 0;
+}
+
+.row{
+  justify-content: center;
+}
+
+#turnOffMenu{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5em;
+  background-color: black;
+  z-index: 5;
+  font-size: large;
+  position: absolute;
+  left: 8.4rem;
+  top: 20rem;
+}
+
+.menu-btn{
+  width: 100%;
+}
+
+.menu-btn:active{
+  background-color: silver;
+}
+
+#dropdown{
+  position: absolute;
+  left: 10rem;
+  top: 25rem;
+}
+
+.dropdown-menu{
+  box-shadow: 1rem 1rem 1rem black;
+  display: block;
+}
+
+.dropdown-item{
+  display: flex;
+  align-items: center;
+}
+
+#closeBtn{
+  position: absolute;
+  right: 0.3rem;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+#closeBtn:hover{
+  background-color: red;
+}
+#closeBtn:active{
+  background-color: darkred;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#power-btn{
+    background: black;
+    border-width: 0.1px;
+    border-color: darkgray;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    width: 1em;
+}
+
+#power-btn:hover:active{
+  left: -2px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  width: 0;
+}
+
+.const-btn-div{
+  align-items: center;
+  background-color: black;
+  justify-content: space-evenly;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.const-btn{
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+#squareBtn{
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.4rem;
+}
+
+#homeBtn, #squareBtn{
+  background-color: white;
+  margin: 0 1rem 0 1rem;
+}
+
+#homeBtn{
+  border-radius: 10rem;
+}
+
+#returnBtn{
+  width: 4.8rem;
+  height: 4.8rem;
+}

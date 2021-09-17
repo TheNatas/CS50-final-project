@@ -1,0 +1,30 @@
+:root{
+    font-size: 60%;
+    --body-background-desktop: no-repeat linear-gradient(-80deg, black, rgb(46, 46, 46), darkgray);
+    --body-background: rgb(46, 46, 46);
+    --buttons-background: linear-gradient(rgb(92, 0, 0), black);
+}
+
+body{
+    background: var(--body-background);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body section{
+    width: 90rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px){
+    body{
+        background: var(--body-background-desktop);
+    }
+
+    body section{
+        width: 160rem;
+    }
+}
