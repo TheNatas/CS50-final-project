@@ -1,0 +1,73 @@
+#notes-icon:active{
+  filter: brightness(200%);
+}
+
+#game.notes-app{
+  background-color: wheat;
+}
+
+#notes-container{
+  align-self: start;
+}
+
+#div-options{
+  font-size: small;
+  align-items: center;
+}
+
+span.selected{
+  background-color: darkseagreen;
+  font-style: italic;
+}
+
+span#w{
+  border-radius: 1.5rem 0 0 0;
+}
+
+#write, #draw{
+  background-color: wheat;
+}
+
+textarea{
+  resize: none;
+}
+
+canvas#draw{
+  border: solid darkseagreen;
+  border-bottom: 0;
+}
+
+#clear{
+  height: 3.0rem;
+  border-radius: 0;
+}
+
+#clear_confirmation{
+  z-index: 5;
+  position: absolute;
+  left: 3.5rem;
+  bottom: 8rem;
+}
+
+span#yes,span#no{
+  padding: 1rem;
+  color: darkseagreen;
+}
+
+span#yes:hover{
+  background-color: red;
+  color: white;
+}
+
+span#yes:active{
+  color: black;
+}
+
+span#no:hover{
+  background-color: darkseagreen;
+  color: black;
+}
+
+span#no:active{
+  color: white;
+}

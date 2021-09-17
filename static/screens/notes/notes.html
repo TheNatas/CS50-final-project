@@ -1,0 +1,44 @@
+<div id="camera-div"><div id="camera"></div></div>
+<div id="status-bar"><div id="clock-div"><p id="clock"></p></div></div>
+<div id="hidden"></div>
+<div class="main container" id="notes-container">
+  <div class="row row-cols-3" id="div-options">
+    <span class="col" id="w" onclick="displayField('w')">Write</span>
+    <span class="col" id="d" onclick="displayField('d')">Draw</span>
+    <img class="col" id="save" src="/static/screens/notes/save.svg" alt="Save" height="16px" onclick="saveNotes()">
+  </div>
+
+  <div class="col" id="turnOffMenu">
+    <p class="row menu-btn" id="turnOff">Turn Off</p>
+    <p class="row menu-btn" id="restart">Restart</p>
+    <p class="row menu-btn" id="cancel">Cancel</p>
+  </div>
+
+  <div class="dropdown" id="dropdown">
+    <div class="dropdown-menu">
+
+    </div>
+  </div>
+
+  <div class="row row-cols-1">
+    <canvas class="col" id="draw" height="492rem">
+      Draw your notes here
+    </canvas>
+
+    <textarea class="col" rows="30" autofocus autocomplete="off" id="write"></textarea>
+  </div>
+
+  <div class="row" id="clear_confirmation">
+    <div class="alert alert-warning" role="alert">Are you sure you wanna do this? <span id="yes">Yes</span><span id="no">No</span> </div>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary btn-block" id="clear" type="button" value="Clear" >Clear</button>
+  </div>
+
+  <div class="row row-cols-3 const-btn-div">
+    <div class="col const-btn" id="squareBtn" alt="Show apps in second plan" onclick="squareButton()"></div>
+    <div class="col const-btn" id="homeBtn" alt="Return to homescreen" onclick="homeButton()"></div>
+    <img class="col const-btn" id="returnBtn" src="/static/const/const-btn/returnBtn-white.jpg" alt="Return to last screen" onclick="returnButton()">
+  </div>
+</div>
