@@ -1,0 +1,41 @@
+<div id="camera-div"><div id="camera"></div></div>
+<div id="status-bar"><div id="clock-div"><p id="clock"></p></div></div>
+<div class="hour-day">
+  <h1 class="hour"></h1>
+  <p class="day"></p>
+</div>
+<div class="main container-fluid">
+
+  <div class="col" id="turnOffMenu">
+    <p class="row menu-btn" id="turnOff">Turn Off</p>
+    <p class="row menu-btn" id="restart">Restart</p>
+    <p class="row menu-btn" id="cancel">Cancel</p>
+  </div>
+
+  <div class="dropdown" id="dropdown">
+    <div class="dropdown-menu">
+
+    </div>
+  </div>
+
+  <div class="row row-cols-1">
+    <div class="search-container">
+      <input class="search" type="text" autocomplete="off" placeholder="  Search">
+    </div>
+  </div>
+
+  <div class="apps-container">
+    <img class="app-icon" id="notes-icon" src="/static/screens/notes/notes.png" width="42px" height="42px" alt="Notes App" onclick="openNotesApp()">
+    <img class="app-icon" id="camera-icon" src="/static/screens/camera/camera.png" width="42px" height="42px" alt="Camera app" onclick="openCamera()">
+  </div>
+
+    <!--Icons made by https://www.flaticon.com/authors/photo3idea-studio
+    from https://www.flaticon.com/-->
+    <!--Icons made by https://www.freepik.com
+    from https://www.flaticon.com/-->
+  <div class="row row-cols-3 const-btn-div">
+    <div class="col const-btn" id="squareBtn" alt="Show apps in second plan" onclick="squareButton()"></div>
+    <div class="col const-btn" id="homeBtn" alt="Return to homescreen" onclick="homeButton()"></div>
+    <img class="col const-btn" id="returnBtn" src="/static/const/const-btn/returnBtn-white.jpg" alt="Return to last screen" onclick="returnButton()">
+  </div>
+</div>

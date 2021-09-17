@@ -1,0 +1,38 @@
+#game.homescreen{
+  background-image: url(/static/screens/home/trunks4k.jpg);
+  background-size: 31em;
+}
+
+.homescreen .hour-day{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 5rem;
+  font-size: smaller;
+  width: auto;
+  justify-items: center;
+  display: grid;
+  border-radius: 100%;
+  padding: 3rem;
+  border: solid thin rgba(0, 0, 0, 0.7);
+}
+
+.search-container{
+  display: grid;
+  padding-top: 8rem;
+}
+
+.search{
+  background-color: black;
+  color: white;
+  justify-self: center;
+  font-size: small;
+  width: 80%;
+  border-width: thin;
+  border-radius: 2rem;
+}
+
+.apps-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
