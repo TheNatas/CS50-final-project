@@ -106,7 +106,7 @@ This file defines the function *activateCamera*, which defines all the listeners
 
 ### Usage:
 If necessary, write the command "$env:FLASK_APP = "game.py"" without the outer quotes in your PowerShell and press Enter
-Write the command "flask run" without the quoter in your PowerShell and press Enter.
+Write the command "flask run" without the quoter in your PowerShell and press Enter (it might be necessary to type "python -m" before flask for getting it recognized).
 Select the given URL and copy it with ALT + C and paste it in your browser
 
 1. Turn the cellphone on by holding the power button until the Initialization starts. The power button is found at the right side of the phone, by the middle.
