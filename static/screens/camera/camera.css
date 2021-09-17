@@ -1,0 +1,86 @@
+#video-container{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+video{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#capture{
+  background-color: rgb(200, 0, 0);
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  align-self: end;
+  bottom: 7rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10rem;
+}
+
+#canvas,#photo{
+  display: none;
+}
+
+#close-photo{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  font-size: large;
+}
+#close-photo:active{
+  filter: brightness(200%);
+}
+
+#save-photo{
+  display: none;
+  position: absolute;
+  top: 2.6rem
+}
+
+#filter-name{
+  display: none;
+  position: absolute;
+  top: 5rem;
+  font-weight: bold;
+}
+
+input#value-slider{
+  position: absolute;
+  bottom: 10rem;
+}
+
+#previews-div{
+  position: absolute;
+  display: flex;
+  bottom: 7rem;
+}
+
+#previews-div>img{
+  border-radius: 10rem;
+}
+
+img.selected{
+  width: 24px;
+  height: 24px;
+}
+
+.preview,#original,#value-slider{
+  display: none;
+}
+
+#grayscale{
+  filter: grayscale(100%);
+}
+#blur{
+  filter: blur(1px);
+}
+#contrast{
+  filter: contrast(200%);
+}
+#sepia{
+  filter: sepia(100%);
+}

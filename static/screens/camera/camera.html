@@ -1,0 +1,46 @@
+<div id="camera-div"><div id="camera"></div></div>
+<div id="status-bar"><div id="clock-div"><p id="clock"></p></div></div>
+<div id="hidden"></div>
+<div class="main container-fluid">
+
+  <div class="dropdown" id="dropdown">
+    <div class="dropdown-menu">
+
+    </div>
+  </div>
+
+  <div class="col" id="turnOffMenu">
+    <p class="row menu-btn" id="turnOff">Turn Off</p>
+    <p class="row menu-btn" id="restart">Restart</p>
+    <p class="row menu-btn" id="cancel">Cancel</p>
+  </div>
+
+  <div id="video-container">
+    <video autoplay>
+
+    </video>
+    <button id="capture" type="button"></button>
+
+    <canvas id="canvas"></canvas>
+    <img id="photo">
+    <p id="close-photo">X</p>
+    <img class="col" id="save-photo" src="/static/screens/notes/save.svg" alt="Save" height="16px">
+
+    <h4 id="filter-name"></h4>
+    <input type="range" min="0" max="100" value="0" id="value-slider">
+    <div id="previews-div">
+      <img class="preview" id="grayscale" alt="Filter picture with grayscale" height="20px" width="20px">
+      <img class="preview" id="sepia" alt="Filter picture with sepia" height="20px" width="20px">
+      <img class="preview" id="blur" alt="Filter picture with blur" height="20px" width="20px">
+      <img class="preview" id="contrast" alt="Filter picture with contrast" height="20px" width="20px">
+      <img id="original" alt="Reset filters" height="20px" width="20px">
+    </div>
+
+  </div>
+
+  <div class="row row-cols-3 const-btn-div">
+    <div class="col const-btn" id="squareBtn" alt="Show apps in second plan" onclick="squareButton()"></div>
+    <div class="col const-btn" id="homeBtn" alt="Return to homescreen" onclick="homeButton()"></div>
+    <img class="col const-btn" id="returnBtn" src="/static/const/const-btn/returnBtn-white.jpg" alt="Return to last screen" onclick="returnButton()">
+  </div>
+</div>
