@@ -1,7 +1,7 @@
 # Find Me
 #### Video Demo:  <https://youtu.be/pVJaYvERXiE>
 #### Description:
-"Find Me" is a web based prototype of a "lost phone" game (as _Another Lost Phone_ and _Simulacra_) where the player can have a smartphone-like experience on their browsers, being able to take notes and selfies and download them to their computer.
+"Find Me" is a flask webpage where the user can have a smartphone-like experience on their browser, being able to take notes and selfies and download them to their computer. This project is also a prototype for a future "lost phone" game (as _Another Lost Phone_ and _Simulacra_), with a higher number of resources on the phone and game lore.
 
 ### Initialization:
 The application starts on `game.py` by connecting to the database (`game.db`) and creating the main route, which renders `index.html`, our main template. It's worth mentioning that there are two other routes on this file, both which are used in the project to access the phone's state and screen's state stored in the database.
@@ -134,4 +134,4 @@ Select the given URL and copy it with ALT + C and paste it in your browser
 
 ### Additional notes:
 - Due to some browser's difference on the active's and hover's hitbox, it might happen that click events on the power button trigger the handler without triggering CSS.
-- Even though being a final project, Find Me should be viewed as just a prototype of a future game, with more apps, better representation of a real smartphone and a meaningful lore.
+- Even though being a final project, Find Me shouldn't be seen as a complete piece. It is, still, just a prototype for a future game, with more apps, better representation of a real smartphone and a meaningful lore.
