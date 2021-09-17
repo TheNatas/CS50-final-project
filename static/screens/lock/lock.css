@@ -1,0 +1,49 @@
+#game.lockscreen{
+  background-image: url(/static/screens/lock/lockscreen.jpg);
+  background-size: 31em;
+}
+
+.hour-day{
+  width: auto;
+  position: absolute;
+  top: 8rem;
+  display: grid;
+  border: solid thin white;
+  border-radius: 100%;
+  padding: 4.5rem;
+}
+
+.hour{
+  justify-self: center;
+}
+
+header.password-screen{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 19rem;
+}
+
+.blocked-warning{
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+
+.password{
+  display: flex;
+  z-index: 4;
+  align-self: center;
+  position: relative;
+}
+
+.space{
+  height: 30rem;
+}
+
+.swipe{
+  font-size: 2rem;
+  position: absolute;
+  bottom: 2rem;
+}
