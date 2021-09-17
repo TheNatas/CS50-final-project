@@ -1,0 +1,29 @@
+#game.init{
+  animation-name: bg-col, brdr-col, col;
+  animation-delay: 2s, 2s, 1s;
+  animation-duration: 10s;
+}
+
+@keyframes bg-col {
+  100% {background-color: white;}
+}
+@keyframes brdr-col {
+  100% {border-color: black;}
+}
+@keyframes col {
+  100% {color: black;}
+}
+
+.dev{
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+}
+
+#logo{
+  margin-right: 1rem;
+}
+
+.dev-text italic{
+  justify-content: flex-start;
+}
